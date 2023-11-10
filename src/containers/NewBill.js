@@ -28,7 +28,7 @@ export default class NewBill {
   }
 
   handleChangeFile = (event) => {
-    let value = event.target.value
+    let value = event.target.value // DAVID URGENCE
     const file = this.document.querySelector(`input[data-testid="file"]`)
       .files[0];
     const filePath = value.split(/\\/g);

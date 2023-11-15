@@ -27,8 +27,7 @@ export default class NewBill {
     new Logout({ document, localStorage, onNavigate });
   }
 
-  handleChangeFile = (event) => {
-    let value = event.target.value // DAVID URGENCE
+  handleChangeFile = (value) => {
     const file = this.document.querySelector(`input[data-testid="file"]`)
       .files[0];
     const filePath = value.split(/\\/g);
